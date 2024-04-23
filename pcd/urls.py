@@ -18,7 +18,9 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
+    path('login',include('login.urls')),
     path('',include('login.urls')),
     path('',include('signup.urls')),
+    path('',include('dashboard.urls')),
     path('admin/', admin.site.urls),
 ]
